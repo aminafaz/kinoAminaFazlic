@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <head>
     <title>Filmovi</title>
+    <link rel="stylesheet" href="stil.css">
 </head>
 <body>
+    <nav>
+        <ul class="meni">
+            <li><a href="filmovi.html">Filmovi</a></li>
+            <li><a href="raspored.html">Raspored</a></li>
+            <li><a href="sala.html">Sala</a></li>
+        </ul>
+    </nav>
     <main>
         <h1>Filmovi</h1>
         <div id="akcija">
@@ -18,21 +26,118 @@
                     <h3>Brzina 2</h3>
                     <p>135 min</p> 
                 </div>
-                <div class="film nije">
+                <div class="film nije-u-ponudi">
                     <img src="https://www.b92.net/data/images/2024-03-11/4984_3542871565eb02606e513646917307-v4-big_orig.jpg"  alt="Film 3">
-                    <h3>Poslednji strelac</h3>
+                    <h3>Posljednji strijelac</h3>
                     <p>140 min</p> 
+                </div>
+                <div class="film trenutno">
+                    <img src="https://i5.walmartimages.com/asr/edd47d6c-31e7-4dec-b459-ae3b6f77e85c.0ad57d9166696a65ca9f823d087132b0.jpeg" alt="Mehaničar: Povratak">
+                    <h3>Mehaničar: Povratak</h3>
+                    <p>98 min</p>
+                </div>
+                <div class="film uskoro">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Triple_Frontier.jpg" alt="Trostruka granica">
+                    <h3>Trostruka granica</h3>
+                    <p>125 min</p>
                 </div>
             </div>
         </div>
         <div id="drama">
             <h2>Drama</h2>
+            <div class="sekcija">
+                <div class="film-grid">
+                    <div class="film trenutno">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Magnolia_poster.png" alt="Magnolija">
+                        <h3>Magnolija</h3>
+                        <p>188 min</p>
+                    </div>
+                    <div class="film trenutno">
+                        <img src="https://resizing.flixster.com/InD0mwEWXeBaeR_roR16jsqZXCU=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p30600721_v_h8_ad.jpg" alt="Steve">
+                        <h3>Steve</h3>
+                        <p>93 min</p>
+                    </div>
+                    <div class="film uskoro">
+                        <img src="https://m.media-amazon.com/images/M/MV5BODdkZjZlZTMtMzZmZC00NTg3LWFlODUtMmIyYzJmNThlOWMyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Veliko, hrabro i prelijepo putovanje">
+                        <h3>Veliko, hrabro i prelijepo putovanje</h3>
+                        <p>109 min</p>
+                    </div>
+                    <div class="film uskoro">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVy67PCp2anZ2IwLa4wxL4O6LUcimmGTWT9Ak4S_UvjOafi0SJi-PVEkvQpVg858OmB5lphoBxye_IwjKOJWXHhUMo8nh8Coji-Oas-msW5g&s=10" alt="Snovi voza">
+                        <h3>Snovi voza</h3>
+                        <p>102 min</p>
+                    </div>
+                    <div class="film nije-u-ponudi">
+                        <img src="https://assets-prd.ignimgs.com/2025/07/15/the-map-that-leads-you-button-1752581871468.jpg" alt="Mapa koja vodi do tebe">
+                        <h3>Mapa koja vodi do tebe</h3>
+                        <p>98 min</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="komedija">
             <h2>Komedija</h2>
+            <div class="sekcija">
+                <div class="film-grid">
+                    <div class="film trenutno">
+                        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p34622_p_v8_at.jpg" alt="Bijele cure">
+                        <h3>Bijele cure</h3>
+                        <p>109 min</p>
+                    </div>
+                    <div class="film uskoro">
+                        <img src="https://images.sr.roku.com/idType/roku/context/global/id/9fdc15049c2651698a09bf2b6bf2291a/images/gracenote/assets/p167014_v_v11_am.jpg/magic/396x0/filters:quality(70)" alt="Superbad">
+                        <h3>Superloši</h3>
+                        <p>119 min</p>
+                    </div>
+                    <div class="film nije-u-ponudi">
+                        <img src="https://a.ltrbxd.com/resized/film-poster/4/7/0/7/8/47078-wedding-crashers-0-230-0-345-crop.jpg?v=f3b8dde858" alt="Svadbeni uljezi">
+                        <h3>Svadbeni uljezi</h3>
+                        <p>119 min</p>
+                    </div>
+                    <div class="film trenutno">
+                        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8915813_p_v8_am.jpg" alt="Diktator">
+                        <h3>Diktator</h3>
+                        <p>83 min</p>
+                    </div>
+                    <div class="film uskoro">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBN6i5dAGGmv07jD5Djx19AtAwvSMCjtK2Dg&s" alt="Hotel Grand Budapest">
+                        <h3>Hotel Grand Budapest</h3>
+                        <p>99 min</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="animirani">
             <h2>Animirani</h2>
+            <div class="sekcija">
+                <div class="film-grid">
+                    <div class="film trenutno">
+                        <img src="https://lumiere-a.akamaihd.net/v1/images/p_bambi_19754_990e0e5a.jpeg" alt="Bambi">
+                        <h3>Bambi</h3>
+                        <p>70 min</p>
+                    </div>
+                    <div class="film trenutno">
+                        <img src="https://lumiere-a.akamaihd.net/v1/images/p_aladdin1992_20486_174ba005.jpeg" alt="Aladin">
+                        <h3>Aladin</h3>
+                        <p>90 min</p>
+                    </div>
+                    <div class="film uskoro">
+                        <img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABX0pHgqFLsGxo1aVOdLieG7JrxmmFMbmwe601wQ9qBmQuTlnEJRfN5VGzaW8we3TP16l0bBDCmnlU97P1MMWPt_3P-3K1pe35sRJ.jpg?r=f12" alt="Začarana">
+                        <h3>Začarana</h3>
+                        <p>109 min</p>
+                    </div>
+                    <div class="film uskoro">
+                        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p17535_p_v8_ay.jpg" alt="Preko ograde">
+                        <h3>Preko ograde</h3>
+                        <p>83 min</p>
+                    </div>
+                    <div class="film nije-u-ponudi">
+                        <img src="https://m.media-amazon.com/images/M/MV5BN2ZiYjQ2ZDctMDI3Yy00YmViLWEyMGYtZTYxMmE2MGM5Y2M5XkEyXkFqcGc@._V1_.jpg" alt="Balto">
+                        <h3>Balto</h3>
+                        <p>78 min</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>

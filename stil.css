@@ -2,35 +2,64 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     min-width: 300px;
-    background-color: #d9e7f5;
+    background-color: #cedbe8;
 }
 main {
-    padding: 20px;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(35, 161, 178);
+    padding: 0px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.meni {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    margin: 0;
+    justify-content: center;
+}
+
+.meni a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(29, 132, 146);
+    border: 2px solid  rgb(24, 89, 98);
+    display: block;
+    padding: 5px;
+    border-radius: 4px;
 }
 h1 {
     text-align: center;
-    background-color: #4d88ff;
+    background-color: rgb(27, 104, 114);
     color: white;
     padding: 20px;
     border-radius: 8px;
 }
-
+.film-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-content: center;
+}
 h2 {
-    background-color: #78aaff;
+    background-color: rgb(37, 143, 157);
     color: white;
     padding: 12px;
     border-radius: 6px;
 }
-.film-grid {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr;
-    justify-content: center;
-}
 
 .film {
     width: 200px;
-    border: 2px solid #2f4f8f;
+    border: 2px solid rgb(24, 89, 98);
     padding: 10px;
     border-radius: 8px;
     text-align: center;
@@ -52,7 +81,49 @@ h2 {
     background-color: powderblue;
 }
 
-.nije {
+.nije-u-ponudi {
     background-color: gray;
+}
+
+.meni a:hover {
+    background-color: rgb(24, 89, 98);
     color: white;
+    transform: scale(1.05);
+}
+
+.aktivan {
+    background-color: rgb(20, 70, 78);
+    color: white;
+    border: 2px solid white;
+}
+
+.film:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1:hover {
+    background-color: rgb(20, 70, 78);
+}
+
+h2:hover {
+    background-color: rgb(27, 104, 114);
+}
+
+@media (max-width: 500px) {
+    .meni {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media (min-width: 800px) {
+    .film-grid {
+        grid-template-columns: repeat(3, 200px);
+    }
+}
+
+@media (min-width: 1080px) {
+    .film-grid {
+        grid-template-columns: repeat(5, 200px);
+    }
 }
